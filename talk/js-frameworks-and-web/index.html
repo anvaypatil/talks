@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Javascript Frameworks and Web</title>
+
+    <meta name="description" content="Angular Internals">
+    <meta name="author" content="Anvay Patil">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="../reveal/css/reveal.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+    <link rel="stylesheet" href="../reveal/lib/css/wrapper.css">
+    <link rel="stylesheet" href="js-frameworks-and-web.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <section>
+                <h1>Javascript Frameworks and Today's Web</h1>
+                <p>
+                    <small>Created by <a href="">Anvay Patil</a></small>
+                </p>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <p>
+                    <small>Note: arrow keys to move on slides, Esc to zoom-out</small>
+                </p>
+            </section>
+            <section>
+                <h3>About Me ?</h3>
+            </section>
+        </section>
+        <section data-background-color="#fffff0">
+            <section>
+                <h2>Knowing internals of any framework matters?</h2>
+            </section>
+            <section>
+                <h2>What are we deep diving into.?</h2>
+                <ul class="fragment">
+                    <li class="fragment">Why do we need frameworks</li>
+                    <li class="fragment">Angular and others exists</li>
+                    <li class="fragment">Rendering Engines</li>
+                    <li class="fragment">Javascript Engines</li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <h3>Q&A</h3>
+            <p style="font-size: 36px;" class="fragment">Thank you :)</p>
+        </section>
+    </div>
+</div>
+
+<script src="../reveal/lib/js/head.min.js"></script>
+<script src="../reveal/js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        dependencies: [
+            {src: '../reveal/plugin/markdown/marked.js'},
+            {src: '../reveal/plugin/markdown/markdown.js'},
+            {src: '../reveal/plugin/notes/notes.js', async: true},
+            {
+                src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+    // Shows the slide number using default formatting
+    Reveal.configure({slideNumber: true});
+
+    // Slide number formatting can be configured using these variables:
+    //  "h.v": 	horizontal . vertical slide number (default)
+    //  "h/v": 	horizontal / vertical slide number
+    //    "c": 	flattened slide number
+    //  "c/t": 	flattened slide number / total slides
+    Reveal.configure({slideNumber: 'c/t'});
+
+    // Control which views the slide number displays on using the "showSlideNumber" value:
+    //     "all": show on all views (default)
+    // "speaker": only show slide numbers on speaker notes view
+    //   "print": only show slide numbers when printing to PDF
+    Reveal.configure({showSlideNumber: 'speaker'});
+</script>
+
+</body>
+</html>
