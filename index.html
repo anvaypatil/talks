@@ -32,7 +32,6 @@
             background-size: 100px 100px;
             -webkit-box-shadow: inset 0 0 20px 2px #222;
             box-shadow: inset 0 0 200px 70px #222;
-            display: flex;
         }
 
         @media screen and (max-width: 820px) {
@@ -215,10 +214,28 @@
 
 <body translate="no">
     <div class="container">
-        <header>
-            <h1>🌿 My Tech Talks 🌿</h1>
+        <header style="position: sticky">
+            <h1 style="border-radius: 20px; background-color: rgba(0,0,0,.3);">🌿 My Tech Talks 🌿</h1>
         </header>
         <div class="content">
+            <div class="card card-yellow"
+                 style="background-size: contain;background-image: url('assets/images/js-state.min.png')">
+                <div class="card-content">
+                    <h3 style="color: #f7534d;">JS Frameworks & the Web</h3>
+                    <ul style="background-color: rgba(0,0,0,0.8)">
+                        <li>What we really expect from a web app</li>
+                        <li>Why do we need frameworks</li>
+                        <li>Look at how web-app's got evolved</li>
+                        <li>Case Study of frameworks</li>
+                        <li>Better Architectural pattern</li>
+                        <li>How can we improve maintainability</li>
+                    </ul>
+                </div>
+                <div class="pad-top">
+                    <a href="talk/js-frameworks-and-web/" target="_blank" class="button">View
+                        Presentation</a>
+                </div>
+            </div>
             <div class="card card-blue-light"
                 style="background-size: contain;background-image: url('assets/images/browser-internals.min.png')">
                 <div class="card-content">
@@ -255,24 +272,6 @@
                         Presentation</a>
                 </div>
             </div>
-            <div class="card card-yellow"
-                 style="background-size: contain;background-image: url('assets/images/js-state.min.png')">
-                <div class="card-content">
-                    <h3 style="color: #f7534d;">JS Frameworks & the Web</h3>
-                    <ul style="background-color: rgba(0,0,0,0.8)">
-                        <li>What we really expect from a web app</li>
-                        <li>Why do we need frameworks</li>
-                        <li>Look at how web-app's got evolved</li>
-                        <li>Case Study of frameworks</li>
-                        <li>Better Architectural pattern</li>
-                        <li>How can we improve maintainability</li>
-                    </ul>
-                </div>
-                <div class="pad-top">
-                    <a href="talk/js-frameworks-and-web/" target="_blank" class="button">View
-                        Presentation</a>
-                </div>
-            </div>
             <div class="card card-purple"
                 style="background-size:cover;background-image:url('assets/images/bytecodes.min.jpg')">
                 <div class="card-content">
@@ -289,7 +288,8 @@
                     <a href="talk/jvm-bytecodes/" class="button" target="_blank">View Presentation</a>
                 </div>
             </div>
-            <div class="card card-purple" style="background-size:cover;background-image:url('assets/images/java9.min.jpg')">
+            <div class="card card-purple"
+                 style="background-size:cover;background-image:url('assets/images/java9.min.jpg')">
                 <div class="card-content">
                     <h3 style="color: #9acbeb;">Awesome Java 9</h3>
                     <ul style="background-color: rgba(0,0,0,0.1)">
